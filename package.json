@@ -1,0 +1,22 @@
+{
+  "name": "@lrnwebcomponents/simple-timer",
+  "flat": true,
+  "version": "3.0.0",
+  "description": "Simple timer.",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "simple",
+    "timer"
+  ],
+  "main": "simple-timer.html",
+  "dependencies": {
+    "@polymer/paper-button": "^3.0.0-pre.25",
+    "@polymer/polymer": "^3.0.5"
+  },
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
+    "@webcomponents/webcomponentsjs": "^2.1.1",
+    "wct-browser-legacy": "^1.0.0"
+  }
+}

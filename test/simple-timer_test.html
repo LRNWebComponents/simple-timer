@@ -9,7 +9,7 @@
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     <script src="../../web-component-tester/browser.js"></script>
 
-    <link rel="import" href="../simple-timer.html">
+    <script type="module" src="../simple-timer.js"></script>
   </head>
   <body>
     <test-fixture id="basic">
@@ -18,13 +18,14 @@
       </template>
     </test-fixture>
 
-    <script>
-      suite('simple-timer', function() {
-        test('instantiating the element works', function() {
-          var element = fixture('basic');
-          assert.equal(element.is, 'simple-timer');
-        });
-      });
-    </script>
+    <script type="module">
+import '../simple-timer.js';
+suite('simple-timer', function() {
+  test('instantiating the element works', function() {
+    var element = fixture('basic');
+    assert.equal(element.is, 'simple-timer');
+  });
+});
+</script>
   </body>
 </html>
